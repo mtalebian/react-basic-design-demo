@@ -53,7 +53,7 @@ export const TableDemo = () => {
                 </Example>
                 <SourceCode lines={["<bd.BasicTable>", "   <table>", "   ...", "   </table>", "</bd.BasicTable>"]} />
 
-                <Example title="Data table">
+                <Example title="Data table (MultiSelect)">
                     <bd.BasicTable
                         hover
                         nowrap
@@ -86,7 +86,7 @@ export const TableDemo = () => {
                         "const [selectedIndices, setSelectedIndices] = useState([]);",
                         "",
                         "<bd.BasicTable",
-                        "   hover  nowrap  multiSelect toggleOnClick",
+                        "   hover  nowrap  multiSelect",
                         "   columns={[",
                         "      { name: 'Id', title: 'ID', width: 70 },",
                         "      { name: 'firstName', title: 'First Name' },",
