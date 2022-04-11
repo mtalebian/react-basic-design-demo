@@ -23,6 +23,8 @@ import { PanelDemo } from "./panel-demo";
 import { TabsDemo } from "./tabs-demo";
 import { PaperDemo } from "./paper-demo";
 import { CardDemo } from "./card-demo";
+import SvgDarkMode from "../icons/DarkMode";
+import SvgFormatTextdirectionRToL from "../icons/FormatTextdirectionRToL";
 
 export const Demo = () => {
     const [selectedItem, setSelectedItem] = useState();
@@ -35,6 +37,14 @@ export const Demo = () => {
         { header: "Utils:", items: ["MsgBox", "Colors", "New CSS"] },
     ];
 
+    const toggleRTL = () => {
+        bd.helper.setRTL(!bd.helper.getRTL());
+    };
+
+    const toggleDarkMode = () => {
+        bd.helper.setTheme(bd.helper.isDarkMode() ? "bd-light" : "bd-dark");
+    };
+
     return (
         <>
             <bd.AppBar position="static">
@@ -43,9 +53,15 @@ export const Demo = () => {
                         <SvgMenu />
                     </bd.Button>
                     <h5 className="appbar-title">React-Basic-Design Demo</h5>
+
+                    <bd.Button variant="icon" color="inherit" onClick={toggleRTL} title="toggle RTL">
+                        <SvgFormatTextdirectionRToL />
+                    </bd.Button>
+                    <bd.Button variant="icon" color="inherit" onClick={toggleDarkMode} title="toggle dark-mode">
+                        <SvgDarkMode />
+                    </bd.Button>
                 </bd.Toolbar>
             </bd.AppBar>
-
             <div className="container-fluid py-3">
                 <div className="row">
                     <div className="col" style={{ maxWidth: 300 }}>

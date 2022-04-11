@@ -58,7 +58,6 @@ export const TableDemo = () => {
                         hover
                         nowrap
                         multiSelect
-                        toggleOnClick
                         columns={[
                             { name: "Id", title: "ID", width: 70 },
                             { name: "firstName", title: "First Name" },
