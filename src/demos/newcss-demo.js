@@ -1,11 +1,13 @@
 import React from "react";
 import * as bd from "react-basic-design";
+import SvgArrowUpward from "../icons/ArrowUpward";
+import SvgFormatTextdirectionRToL from "../icons/FormatTextdirectionRToL";
 import { Example } from "./demo-components";
 
 export const NewCssDemo = () => {
     return (
         <>
-            <div style={{ maxWidth: 600 }}>
+            <div style={{ maxWidth: 700 }}>
                 <h1 className="mb-5">New CSS</h1>
 
                 <Example title="Borders">
@@ -106,6 +108,99 @@ export const NewCssDemo = () => {
                                 .m-e-5, <span className="fw-normal text-secondary">.m-e-n5</span>
                             </dt>
                         </dl>
+                    </bd.Flex>
+                </Example>
+
+                <Example title="Rotate">
+                    <bd.Flex className="text-center" align="end" content="between">
+                        <div>
+                            <SvgFormatTextdirectionRToL />
+                            <div>NORMAL</div>
+                        </div>
+                        <div>
+                            <SvgFormatTextdirectionRToL className="rotate-90" />
+                            <div>.rotate-90</div>
+                        </div>
+
+                        <div>
+                            <SvgFormatTextdirectionRToL className="rotate-n90" />
+                            <div>.rotate-n90</div>
+                        </div>
+
+                        <div>
+                            <SvgFormatTextdirectionRToL className="rotate-180" />
+                            <div>.rotate-180</div>
+                        </div>
+
+                        <div>
+                            <SvgFormatTextdirectionRToL className="rotate-270" />
+                            <div>.rotate-270</div>
+                        </div>
+
+                        <div>
+                            <SvgFormatTextdirectionRToL className="rotate-n270" />
+                            <div>.rotate-n270</div>
+                        </div>
+                    </bd.Flex>
+                </Example>
+
+                <Example
+                    title={
+                        <bd.Button variant="contained" onClick={() => bd.helper.setRTL(true)}>
+                            RTL
+                        </bd.Button>
+                    }
+                >
+                    <bd.Flex className="text-center" align="end" content="between">
+                        <div>
+                            <SvgFormatTextdirectionRToL />
+                            <div>NORMAL</div>
+                        </div>
+
+                        <div>
+                            <SvgFormatTextdirectionRToL className="rtl-rotate-180" />
+                            <div>.rtl-rotate-180</div>
+                        </div>
+
+                        <div>
+                            <SvgFormatTextdirectionRToL className="rtl-d-none" />
+                            <div>.rtl-d-none</div>
+                        </div>
+
+                        <div>
+                            <SvgFormatTextdirectionRToL className="rtl-d-block" />
+                            <div>.rtl-d-block</div>
+                        </div>
+                    </bd.Flex>
+                </Example>
+
+                <Example
+                    title={
+                        <bd.Button variant="contained" onClick={() => bd.helper.setRTL(false)}>
+                            ltr
+                        </bd.Button>
+                    }
+                >
+                    <bd.Flex className="text-center" align="end" content="between">
+                        <div>
+                            <SvgFormatTextdirectionRToL />
+                            <div>NORMAL</div>
+                        </div>
+
+                        <div>
+                            <SvgFormatTextdirectionRToL className="ltr-rotate-180" />
+                            <div>.ltr-rotate-180</div>
+                        </div>
+
+                        <div>
+                            <SvgFormatTextdirectionRToL className="ltr-d-none" />
+                            <div>.ltr-d-none</div>
+                        </div>
+
+                        <div>
+                            <SvgFormatTextdirectionRToL className="ltr-d-block" />
+                            <div>.ltr-d-block</div>
+                        </div>
                     </bd.Flex>
                 </Example>
             </div>

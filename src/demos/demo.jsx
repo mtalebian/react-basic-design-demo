@@ -25,16 +25,18 @@ import { PaperDemo } from "./paper-demo";
 import { CardDemo } from "./card-demo";
 import SvgDarkMode from "../icons/DarkMode";
 import SvgFormatTextdirectionRToL from "../icons/FormatTextdirectionRToL";
+import { ThemeDemo } from "./theme-demo";
+import { TreeViewDemo } from "./treeview-demo";
 
 export const Demo = () => {
     const [selectedItem, setSelectedItem] = useState();
     const items = [
         { header: "Inputs:", items: ["Button", "Button Group", "Checkbox", "Radio button", "Switch", "Text Field"] },
-        { header: "Data Display:", items: ["Avatar", "Accordion", "Card", "Paper", "Panel"] },
-        { header: "Surfaces:", items: ["AppBar", "Badge", "List", "Table"] },
-        { header: "Navigation:", items: ["Tabs"] },
+        { header: "Data Display:", items: ["Avatar", "Badge", "List", "Table", "TreeView"] },
+        { header: "Surfaces:", items: ["Accordion", "Card", "Paper", "Panel"] },
+        { header: "Navigation:", items: ["AppBar", "Tabs"] },
         { header: "Layout:", items: ["Form Row", "Form", "Flex"] },
-        { header: "Utils:", items: ["MsgBox", "Colors", "New CSS"] },
+        { header: "Utils:", items: ["MsgBox", "Colors", "New CSS", "Theme"] },
     ];
 
     const toggleRTL = () => {
@@ -125,6 +127,10 @@ export const Demo = () => {
                             <ColorsDemo />
                         ) : selectedItem === "new-css" ? (
                             <NewCssDemo />
+                        ) : selectedItem === "theme" ? (
+                            <ThemeDemo />
+                        ) : selectedItem === "treeview" ? (
+                            <TreeViewDemo />
                         ) : (
                             <>Select a menu item ...</>
                         )}

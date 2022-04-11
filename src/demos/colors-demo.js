@@ -27,6 +27,10 @@ export const ColorsDemo = () => {
                             .text-secondary-text
                         </dd>
                         <dd>
+                            <span className="p-3 text-muted">Sample Text</span>
+                            .text-muted
+                        </dd>
+                        <dd>
                             <span className="p-3 text-primary">Sample Text</span>
                             .text-primary
                         </dd>
@@ -100,29 +104,29 @@ export const ColorsDemo = () => {
                 <bd.Flex>
                     <dl>
                         <dd>
-                            <span className="small-box bg-inherit"></span> .bg-inherit
+                            <span className="small-box bg-inherit">.bg-inherit</span>
                         </dd>
                         <dd>
-                            <span className="small-box bg-default"></span> .bg-default
+                            <span className="small-box bg-default">bg-default</span>
                         </dd>
                         <dd>
-                            <span className="small-box bg-primary"></span> .bg-primary
+                            <span className="small-box bg-primary">.bg-primary</span>
                         </dd>
                         <dd>
-                            <span className="small-box bg-secondary"></span> .bg-secondary
+                            <span className="small-box bg-secondary">.bg-secondary</span>
                         </dd>
 
                         <dd>
-                            <span className="small-box bg-danger"></span> .bg-danger
+                            <span className="small-box bg-danger">.bg-danger</span>
                         </dd>
                         <dd>
-                            <span className="small-box bg-info"></span> .bg-info
+                            <span className="small-box bg-info">.bg-info</span>
                         </dd>
                         <dd>
-                            <span className="small-box bg-warning"></span> .bg-warning
+                            <span className="small-box bg-warning">.bg-warning</span>
                         </dd>
                         <dd>
-                            <span className="small-box bg-success"></span> .bg-success
+                            <span className="small-box bg-success">.bg-success</span>
                         </dd>
                     </dl>
                 </bd.Flex>
@@ -130,49 +134,49 @@ export const ColorsDemo = () => {
                 <bd.Flex>
                     <dl>
                         <dt>
-                            <span className="small-box bg-gray-1"></span> .bg-gray-1
+                            <span className="small-box bg-gray-1">.bg-gray-1</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-2"></span> .bg-gray-2
+                            <span className="small-box bg-gray-2">.bg-gray-2</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-3"></span> .bg-gray-3
+                            <span className="small-box bg-gray-3">.bg-gray-3</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-4"></span> .bg-gray-4
+                            <span className="small-box bg-gray-4">.bg-gray-4</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-5"></span> .bg-gray-5
+                            <span className="small-box bg-gray-5">.bg-gray-5</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-10"></span> .bg-gray-10
+                            <span className="small-box bg-gray-10">.bg-gray-10</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-20"></span> .bg-gray-20
+                            <span className="small-box bg-gray-20">.bg-gray-20</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-30"></span> .bg-gray-30
+                            <span className="small-box bg-gray-30">.bg-gray-30</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-40"></span> .bg-gray-40
+                            <span className="small-box bg-gray-40">.bg-gray-40</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-50"></span> .bg-gray-50
+                            <span className="small-box bg-gray-50">.bg-gray-50</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-60"></span> .bg-gray-60
+                            <span className="small-box bg-gray-60">.bg-gray-60</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-70"></span> .bg-gray-70
+                            <span className="small-box bg-gray-70">.bg-gray-70</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-80"></span> .bg-gray-80
+                            <span className="small-box bg-gray-80">.bg-gray-80</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-90"></span> .bg-gray-90
+                            <span className="small-box bg-gray-90">.bg-gray-90</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-gray-95"></span> .bg-gray-95
+                            <span className="small-box bg-gray-95">.bg-gray-95</span>
                         </dt>
                     </dl>
                 </bd.Flex>
@@ -180,49 +184,49 @@ export const ColorsDemo = () => {
                 <bd.Flex>
                     <dl>
                         <dt>
-                            <span className="small-box bg-shade-1"></span> .bg-shade-1
+                            <span className="small-box bg-shade-1">.bg-shade-1</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-2"></span> .bg-shade-2
+                            <span className="small-box bg-shade-2">.bg-shade-2</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-3"></span> .bg-shade-3
+                            <span className="small-box bg-shade-3">.bg-shade-3</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-4"></span> .bg-shade-4
+                            <span className="small-box bg-shade-4">.bg-shade-4</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-5"></span> .bg-shade-5
+                            <span className="small-box bg-shade-5">.bg-shade-5</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-10"></span> .bg-shade-10
+                            <span className="small-box bg-shade-10">.bg-shade-10</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-20"></span> .bg-shade-20
+                            <span className="small-box bg-shade-20">.bg-shade-20</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-30"></span> .bg-shade-30
+                            <span className="small-box bg-shade-30">.bg-shade-30</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-40"></span> .bg-shade-40
+                            <span className="small-box bg-shade-40">.bg-shade-40</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-50"></span> .bg-shade-50
+                            <span className="small-box bg-shade-50">.bg-shade-50</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-60"></span> .bg-shade-60
+                            <span className="small-box bg-shade-60">.bg-shade-60</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-70"></span> .bg-shade-70
+                            <span className="small-box bg-shade-70">.bg-shade-70</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-80"></span> .bg-shade-80
+                            <span className="small-box bg-shade-80">.bg-shade-80</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-90"></span> .bg-shade-90
+                            <span className="small-box bg-shade-90">.bg-shade-90</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-95"></span> .bg-shade-95
+                            <span className="small-box bg-shade-95">.bg-shade-95</span>
                         </dt>
                     </dl>
                 </bd.Flex>
@@ -230,49 +234,49 @@ export const ColorsDemo = () => {
                 <bd.Flex className="bg-info">
                     <dl>
                         <dt>
-                            <span className="small-box bg-shade-1"></span> .bg-shade-1
+                            <span className="small-box bg-shade-1">.bg-shade-1</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-2"></span> .bg-shade-2
+                            <span className="small-box bg-shade-2">.bg-shade-2</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-3"></span> .bg-shade-3
+                            <span className="small-box bg-shade-3">.bg-shade-3</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-4"></span> .bg-shade-4
+                            <span className="small-box bg-shade-4">.bg-shade-4</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-5"></span> .bg-shade-5
+                            <span className="small-box bg-shade-5">.bg-shade-5</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-10"></span> .bg-shade-10
+                            <span className="small-box bg-shade-10">.bg-shade-10</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-20"></span> .bg-shade-20
+                            <span className="small-box bg-shade-20">.bg-shade-20</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-30"></span> .bg-shade-30
+                            <span className="small-box bg-shade-30">.bg-shade-30</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-40"></span> .bg-shade-40
+                            <span className="small-box bg-shade-40">.bg-shade-40</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-50"></span> .bg-shade-50
+                            <span className="small-box bg-shade-50">.bg-shade-50</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-60"></span> .bg-shade-60
+                            <span className="small-box bg-shade-60">.bg-shade-60</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-70"></span> .bg-shade-70
+                            <span className="small-box bg-shade-70">.bg-shade-70</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-80"></span> .bg-shade-80
+                            <span className="small-box bg-shade-80">.bg-shade-80</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-90"></span> .bg-shade-90
+                            <span className="small-box bg-shade-90">.bg-shade-90</span>
                         </dt>
                         <dt>
-                            <span className="small-box bg-shade-95"></span> .bg-shade-95
+                            <span className="small-box bg-shade-95">.bg-shade-95</span>
                         </dt>
                     </dl>
                 </bd.Flex>
@@ -280,49 +284,49 @@ export const ColorsDemo = () => {
                 <bd.Flex>
                     <dl>
                         <dt>
-                            <span className="small-box hover-shade-1"></span> .hover-shade-1
+                            <span className="small-box hover-shade-1">.hover-shade-1</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-2"></span> .hover-shade-2
+                            <span className="small-box hover-shade-2">.hover-shade-2</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-3"></span> .hover-shade-3
+                            <span className="small-box hover-shade-3">.hover-shade-3</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-4"></span> .hover-shade-4
+                            <span className="small-box hover-shade-4">.hover-shade-4</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-5"></span> .hover-shade-5
+                            <span className="small-box hover-shade-5">.hover-shade-5</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-10"></span> .hover-shade-10
+                            <span className="small-box hover-shade-10">.hover-shade-10</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-20"></span> .hover-shade-20
+                            <span className="small-box hover-shade-20">.hover-shade-20</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-30"></span> .hover-shade-30
+                            <span className="small-box hover-shade-30">.hover-shade-30</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-40"></span> .hover-shade-40
+                            <span className="small-box hover-shade-40">.hover-shade-40</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-50"></span> .hover-shade-50
+                            <span className="small-box hover-shade-50">.hover-shade-50</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-60"></span> .hover-shade-60
+                            <span className="small-box hover-shade-60">.hover-shade-60</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-70"></span> .hover-shade-70
+                            <span className="small-box hover-shade-70">.hover-shade-70</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-80"></span> .hover-shade-80
+                            <span className="small-box hover-shade-80">.hover-shade-80</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-90"></span> .hover-shade-90
+                            <span className="small-box hover-shade-90">.hover-shade-90</span>
                         </dt>
                         <dt>
-                            <span className="small-box hover-shade-95"></span> .hover-shade-95
+                            <span className="small-box hover-shade-95">.hover-shade-95</span>
                         </dt>
                     </dl>
                 </bd.Flex>
