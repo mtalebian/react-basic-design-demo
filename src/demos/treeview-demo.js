@@ -13,6 +13,18 @@ export const TreeViewDemo = () => {
         setSelectedIndices({ ...selectedIndices, [id]: !selectedIndices[id] });
     };
 
+    const canDropOnIndex = (ev, args) => {
+        ev.preventDefault();
+        ev.stopPropagation();
+        console.log("onCanDropOnIndex", args);
+    };
+
+    const onDropOnIndex = (ev, args) => {
+        ev.preventDefault();
+        ev.stopPropagation();
+        console.log("onDropOnIndex", args);
+    };
+
     return (
         <div style={{ maxWidth: 600 }}>
             <h1>TreeView</h1>

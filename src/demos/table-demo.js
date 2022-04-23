@@ -112,6 +112,95 @@ export const TableDemo = () => {
                     ]}
                 />
 
+                <Example title="Data table (Render Cell)">
+                    <bd.BasicTable
+                        hover
+                        nowrap
+                        multiSelect
+                        columns={[
+                            { name: "Id", title: "ID", width: 70 },
+                            { name: "firstName", title: "First Name" },
+                            { name: "lastName", title: "Last Name" },
+                            { name: "age", title: "Age", width: 70 },
+                        ]}
+                        data={[
+                            { Id: 1, firstName: "Jon", lastName: "Snow", age: 35 },
+                            { Id: 2, firstName: "Cersei", lastName: "Lannister", age: 42 },
+                            { Id: 3, firstName: "Arya", lastName: "Shark", age: 16 },
+                            { Id: 4, firstName: "Daenerys", lastName: "Targaryen", age: null },
+                        ]}
+                        selectedIndices={selectedIndices}
+                        onSelectionChanged={(indices) => setSelectedIndices(indices)}
+                        renderCell={(args) => (args.columnIndex === 1 ? args.rowIndex + " - " + args.value : <b>{args.value}</b>)}
+                        actions={
+                            <bd.Button size="sm" variant="contained">
+                                CREATE
+                            </bd.Button>
+                        }
+                    >
+                        <div className="nothing-found">Nothing Found!</div>
+                    </bd.BasicTable>
+                </Example>
+                <SourceCode
+                    lines={[
+                        "const [selectedIndices, setSelectedIndices] = useState([]);",
+                        "",
+                        "<bd.BasicTable",
+                        "   ...",
+                        "   renderCell={(args) => (args.columnIndex === 1 ? args.rowIndex + ' - ' + args.value : <b>{args.value}</b>)}",
+                        ">",
+                        "    <div className='nothing-found'>Nothing Found!</div>",
+                        "</bd.BasicTable>",
+                    ]}
+                />
+
+                <Example title="Data table (Draggable)">
+                    <bd.BasicTable
+                        hover
+                        nowrap
+                        multiSelect
+                        columns={[
+                            { name: "Id", title: "ID", width: 70 },
+                            { name: "firstName", title: "First Name" },
+                            { name: "lastName", title: "Last Name" },
+                            { name: "age", title: "Age", width: 70 },
+                        ]}
+                        data={[
+                            { Id: 1, firstName: "Jon", lastName: "Snow", age: 35 },
+                            { Id: 2, firstName: "Cersei", lastName: "Lannister", age: 42 },
+                            { Id: 3, firstName: "Arya", lastName: "Shark", age: 16 },
+                            { Id: 4, firstName: "Daenerys", lastName: "Targaryen", age: null },
+                        ]}
+                        selectedIndices={selectedIndices}
+                        onSelectionChanged={(indices) => setSelectedIndices(indices)}
+                        renderCell={(args) => (args.columnIndex === 1 ? args.rowIndex + " - " + args.value : <b>{args.value}</b>)}
+                        actions={
+                            <bd.Button size="sm" variant="contained">
+                                CREATE
+                            </bd.Button>
+                        }
+                        draggable
+                        onCanDrop={(ev, fromRowIndex, newRowIndex, newColumnIndex) => fromRowIndex !== newRowIndex && newColumnIndex === 1}
+                        onDrop={(ev, fromRowIndex, newRowIndex, newColumnIndex) => console.log("Drop", fromRowIndex, " => ", newRowIndex)}
+                    >
+                        <div className="nothing-found">Nothing Found!</div>
+                    </bd.BasicTable>
+                </Example>
+                <SourceCode
+                    lines={[
+                        "const [selectedIndices, setSelectedIndices] = useState([]);",
+                        "",
+                        "<bd.BasicTable",
+                        "   ...",
+                        "   draggable",
+                        "   onCanDrop={(ev, fromRowIndex, newRowIndex, newColumnIndex) => fromRowIndex !== newRowIndex && newColumnIndex === 1}",
+                        "   onDrop={(ev, fromRowIndex, newRowIndex, newColumnIndex) => console.log('Drop', fromRowIndex, newRowIndex)}",
+                        ">",
+                        "    <div className='nothing-found'>Nothing Found!</div>",
+                        "</bd.BasicTable>",
+                    ]}
+                />
+
                 <Example title="Fixed table">
                     <bd.BasicTable hover fixed>
                         <table>
