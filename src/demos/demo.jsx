@@ -27,12 +27,13 @@ import SvgDarkMode from "../icons/DarkMode";
 import SvgFormatTextdirectionRToL from "../icons/FormatTextdirectionRToL";
 import { ThemeDemo } from "./theme-demo";
 import { TreeViewDemo } from "./treeview-demo";
+import { ChipDemo } from "./chip-demo";
 
 export const Demo = () => {
     const [selectedItem, setSelectedItem] = useState();
     const items = [
         { header: "Inputs:", items: ["Button", "Button Group", "Checkbox", "Radio button", "Switch", "Text Field"] },
-        { header: "Data Display:", items: ["Avatar", "Badge", "List", "Table", "TreeView"] },
+        { header: "Data Display:", items: ["Avatar", "Badge", "Chip", "List", "Table", "TreeView"] },
         { header: "Surfaces:", items: ["Accordion", "Card", "Paper", "Panel"] },
         { header: "Navigation:", items: ["AppBar", "Tabs"] },
         { header: "Layout:", items: ["Form Row", "Form", "Flex"] },
@@ -131,6 +132,8 @@ export const Demo = () => {
                             <ThemeDemo />
                         ) : selectedItem === "treeview" ? (
                             <TreeViewDemo />
+                        ) : selectedItem === "chip" ? (
+                            <ChipDemo />
                         ) : (
                             <>Select a menu item ...</>
                         )}
