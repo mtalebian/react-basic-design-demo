@@ -18,7 +18,7 @@ export const Example = ({ shaded, className, vertical = true, gap = 3, title, ch
     );
 };
 
-export const SourceCode = ({ lines }) => {
+export const SourceCode = ({ lines, expanded }) => {
     if (!lines) lines = [];
     if (!Array.isArray(lines)) lines = [lines];
     return (
@@ -28,6 +28,7 @@ export const SourceCode = ({ lines }) => {
             className="bg-shade-80 text-shade-90 mt-3 mb-5 rounded"
             titleClassName="small"
             size="sm"
+            expanded={expanded}
         >
             <pre className="p-3 m-0 bg-shade-50 rounded ltr" style={{ lineHeight: 1.75 }}>
                 {lines.join("\r\n")}

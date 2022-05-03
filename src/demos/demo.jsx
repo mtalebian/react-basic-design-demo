@@ -28,6 +28,7 @@ import SvgFormatTextdirectionRToL from "../icons/FormatTextdirectionRToL";
 import { ThemeDemo } from "./theme-demo";
 import { TreeViewDemo } from "./treeview-demo";
 import { ChipDemo } from "./chip-demo";
+import { ShamsiDemo } from "./shamsi-demo";
 
 export const Demo = () => {
     const [selectedItem, setSelectedItem] = useState();
@@ -37,7 +38,7 @@ export const Demo = () => {
         { header: "Surfaces:", items: ["Accordion", "Card", "Paper", "Panel"] },
         { header: "Navigation:", items: ["AppBar", "Tabs"] },
         { header: "Layout:", items: ["Form Row", "Form", "Flex"] },
-        { header: "Utils:", items: ["MsgBox", "Colors", "New CSS", "Theme"] },
+        { header: "Utils:", items: ["MsgBox", "Colors", "New CSS", "Theme", "Shamsi"] },
     ];
 
     const toggleRTL = () => {
@@ -134,6 +135,8 @@ export const Demo = () => {
                             <TreeViewDemo />
                         ) : selectedItem === "chip" ? (
                             <ChipDemo />
+                        ) : selectedItem === "shamsi" ? (
+                            <ShamsiDemo />
                         ) : (
                             <>Select a menu item ...</>
                         )}
